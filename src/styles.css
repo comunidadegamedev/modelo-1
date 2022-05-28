@@ -1,0 +1,25 @@
+.main-bg {
+    background: url("/assets/img/bg_main.jpg") no-repeat center center fixed;
+    background-color: rgb(0, 46, 42);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.main-bg-layer2 {
+    background: url("/assets/img/bg_main_2.jpg") no-repeat center center fixed;
+    background-color: rgb(0, 46, 42);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.custom-bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 46, 42, var(--bs-bg-opacity));
+}
+
+body {
+    font-family: "Source Serif Pro";
+}
