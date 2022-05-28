@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "modelo-1": {
+      
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -14,6 +15,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {

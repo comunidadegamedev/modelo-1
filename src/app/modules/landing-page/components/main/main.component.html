@@ -1,0 +1,32 @@
+<div id="divHome" class="container-fluid p-0 m-0 vh-100">
+    <div class="low-z-index welcome-container">
+        <div class="w-100 welcome-fixed-container">
+            <div class="d-md-none">
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <!-- <a routerLink="/trailer" class="d-block btn btn-lg btn-dark ms-2 border border-0 border-white" role="button">Trailer</a> -->
+                    <!-- <a routerLink="./" fragment="divTrailer" class="d-block btn btn-lg btn-dark ms-2 border border-0 border-white" role="button">Trailer</a> -->
+                    <a (click)="scroll('divTrailer')" class="d-block btn btn-lg custom-btn-primary ms-2 pb-1 border border-1 border-white tr-button-inverse" role="button">Trailer</a>
+                </div>
+            </div>
+            <div class="d-none d-md-block ">
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <!-- <a routerLink="/trailer" class="d-inline btn btn-lg btn-dark ms-2 border border-0 border-white" role="button">Watch the Trailer</a> -->
+                    <!-- <a href="home/#divTrailer" class="d-block btn btn-lg btn-dark ms-2 border border-0 border-white" role="button">Watch the Trailer</a> -->
+                    <a (click)="scroll('divTrailer')"class="d-block btn btn-lg custom-btn-primary ms-2 pb-1 border border-1 border-white tr-button-inverse" role="button">Watch the Trailer</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="container-fluid custom-bg-primary p-0" style="--bs-bg-opacity: .0;">
+        <app-trailer id="divTrailer"></app-trailer>
+        <app-buynow id="divBuyNow"></app-buynow>
+        <app-details id="divDetails"></app-details>
+    </div>
+    <div class="container-fluid main-bg-layer3 p-0">
+        <app-news id="divNews"></app-news>
+        <br>
+        <app-requirements id="divRequirements"></app-requirements>
+        <br>
+        <app-producer-info></app-producer-info>
+    </div>
+</div>

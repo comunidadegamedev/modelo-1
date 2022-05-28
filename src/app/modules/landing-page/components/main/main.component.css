@@ -1,0 +1,37 @@
+
+
+.container-custom {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.custom-bg-card {
+    --bs-bg-opacity: 1;
+    background-color: rgba(255,0,0,var(--bs-bg-opacity));
+}
+
+.tr-button-normal {
+    transform: translate(0,-40px)!important;
+    opacity: 1 !important;
+    transition: 0.2s ease-in-out
+}
+
+.tr-button-inverse {
+    transform: translate(0,0);
+    opacity: 0;
+    transition: 0.2s ease-in-out
+
+}
+
+.custom-btn-primary {
+    background-color: rgb(131, 153, 163)!important;
+    border-color: rgb(155, 166, 172)!important;
+    color: rgb(18, 55, 71)!important;
+}
+.custom-btn-primary:hover {
+    background-color: rgb(18, 55, 71, .3)!important;
+    border-color: rgb(118,137,147, 1)!important;
+    color: rgb(155, 166, 172)!important;
+}
+  

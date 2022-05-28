@@ -1,0 +1,16 @@
+.welcome-container {
+    margin-top: 70px;
+    height: calc(95vh - 170px);
+}
+
+.fixed-container {
+    position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+}
+
+.mvh-100 {
+    min-height:100vh;
+  }

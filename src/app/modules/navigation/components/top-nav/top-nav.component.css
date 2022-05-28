@@ -1,0 +1,67 @@
+.navbar-normal {
+  background-color: rgb(17,32,41);
+  transition: 0.5s ease-in-out
+}
+.navbar-inverse {
+  background-color: rgb(17,32,41, 0.1);
+  transition: 0.5s ease-in-out
+}
+
+.brand-inverse {
+  filter: invert(80%) !important;
+  opacity: 1 !important;
+  transition: 0.5s ease-in-out
+}
+.brand-normal {
+  filter: invert(80%);
+  opacity: 0.7;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); /* Correção de bug de transparencia em responsivo*/
+  transition: 0.5s ease-in-out
+}
+
+.nav-item, .nav-link {
+  /* color: #708894 !important; */
+  color: rgb(160,172,180)!important;
+}
+.nav-item:hover, .nav-link:hover {
+  /* color: #708894 !important; */
+  color: rgba(160,172,180,.5) !important;
+}
+
+/* .btn-primary {
+  background-color: #1bd3d2 !important;
+}*/
+.btn-primary {
+  /* background-color: #7bc6da !important; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* text-transform: uppercase; */
+  /* background-color: #194b62 !important; */
+  
+  color: rgb(220, 225, 228)!important;
+  background: rgb(22,145,172);
+  background: linear-gradient(90deg, rgba(18, 55, 71,1) 0%, rgba(22,145,172, 1) 8%, rgba(22,145,172, 1) 49%, rgba(22,145,172,1) 92%, rgba(18, 55, 71,1) 100%);
+  } 
+.btn-primary:hover{
+  color: rgb(18, 55, 71)!important;
+  background: rgb(92, 158, 173);
+  background: linear-gradient(90deg, rgba(18, 55, 71,1) 0%, rgba(92, 158, 173,1) 8%, rgba(92, 158, 173,1) 49%, rgba(92, 158, 173,1) 92%, rgba(18, 55, 71,1) 100%);
+  }
+.btn-secondary {
+  /* background-color: #7bc6da !important; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* text-transform: uppercase; */
+  /* background-color: #194b62 !important; */
+  color: rgb(201, 208, 211)!important;
+  background: rgb(63,112,134);
+  background: linear-gradient(90deg, rgba(18, 55, 71,1) 0%, rgba(25,75,98,1) 8%, rgba(25,75,98,1) 49%, rgba(25,75,98,1) 92%, rgba(18, 55, 71,1) 100%);
+  } 
+.btn-secondary:hover{
+  color: rgb(18, 55, 71)!important;
+  background: rgb(155, 166, 172);
+  background: linear-gradient(90deg, rgba(18, 55, 71) 0%, rgba(155, 166, 172,1) 8%, rgba(155, 166, 172,1) 49%, rgba(155, 166, 172,1) 92%, rgba(18, 55, 71,1) 100%);
+  }

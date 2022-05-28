@@ -1,25 +1,164 @@
 .main-bg {
-    background: url("/assets/img/bg_main.jpg") no-repeat center center fixed;
-    background-color: rgb(0, 46, 42);
+    background: url("assets/img/bg_main_3.jpg") no-repeat center center fixed;
+    background-color: #112029;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 .main-bg-layer2 {
-    background: url("/assets/img/bg_main_2.jpg") no-repeat center center fixed;
-    background-color: rgb(0, 46, 42);
+    background: url("assets/img/bg_main_2.jpg") no-repeat center center fixed;
+    background-color: #112029;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.main-bg-layer3 {
+    background: url("assets/img/bg_main.jpg") no-repeat center center fixed;
+    background-color: #112029;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-.custom-bg-primary {
-    --bs-bg-opacity: 1;
-    background-color: rgba(0, 46, 42, var(--bs-bg-opacity));
+.card .left-brand-bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    background: url("assets/img/bg_details.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
 }
 
+.custom-font-primary {
+    color: #c3985a;
+}
+
+.custom-bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(18, 55, 71, var(--bs-bg-opacity))!important;
+    border-color: rgb(131, 153, 163, 1)!important;
+    color: rgb(181, 228, 247)!important;
+}
+
+/* .custom-bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 46, 42, var(--bs-bg-opacity));
+} */
+.custom-bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(201, 208, 211, var(--bs-bg-opacity))!important;
+    border-color: rgb(131, 153, 163, 1)!important;
+    color: rgb(17,32,41)!important;
+}
+.custom-bg-cards {
+    --bs-bg-opacity: 1;
+    background-color: rgba(201, 208, 211, var(--bs-bg-opacity));
+    color: rgb(201, 208, 211)!important;
+}
+.custom-card-header {
+    border-color: rgb(131, 153, 163, 1)!important;
+    background-color: transparent;
+}
+.custom-bg-cards > .card-footer {
+    background-color: transparent;
+    color: rgb(201, 208, 211, .9) !important;
+}
+
+.custom-bg-cards:hover {
+    --bs-bg-hover-opacity: .8;
+    background-color: rgba(201, 208, 211, var(--bs-bg-hover-opacity));
+    color: rgb(18, 55, 71) !important;
+    border-color: rgb(18, 55, 71)!important;
+}
+.custom-bg-cards:hover > .custom-card-header {
+    border-color: rgb(18, 55, 71)!important;
+}
+.custom-bg-cards:hover > .card-footer {
+    color: rgb(18, 55, 71, .9) !important;
+}
+.custom-bg-cards:hover a {
+    color: rgb(9, 85, 121) !important;
+}
+
+
+.welcome-container {
+    height: calc((110vh - 170px) + 70px);
+}
+.welcome-fixed-container {
+    position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+}
+.low-z-index{
+    z-index: -50 !important;
+}
+.high-z-index{
+    z-index: 50 !important;
+}
+
+@font-face {
+    font-family: "Ringbearer";
+    src: local("Ringbearer"), url("assets/fonts/RINGM___.TTF") format("truetype");
+}
 body {
-    font-family: "Source Serif Pro";
+    /* font-family: "Medula One"; */
+    font-family: "Ringbearer";
+    /* font-family: "Source Serif Pro"; */
+    /* font-family: "MedievalSharp"; */
+}
+
+p {
+    font-family: "MedievalSharp";
+}
+p > a {
+    color: rgb(201, 208, 211, .9) !important;
+}
+
+h1 {
+    font-family: "Ringbearer";
+    /* font-family: "MedievalSharp"; */
+    color: rgb(201, 208, 211)!important;
+    /* color: rgb(18, 55, 71)!important; */
+}
+h2 {
+    font-family: "Ringbearer";
+    color: rgb(201, 208, 211) !important
+    /* color: rgb(201, 208, 211) !important */
+}
+h3 {
+    font-family: "Ringbearer";
+    color: rgb(16, 54, 63);
+    opacity: .8;
+}
+
+dt {
+    font-family: "Ringbearer";
+    color: rgb(16, 54, 63);
+    opacity: .8;
+}
+dd {
+    font-family: "MedievalSharp";
+    font-size: large;
+    font-weight: bold;
+}
+
+.div-show-normal {
+    transform: translate(0, 0px)!important;
+    opacity: 1 !important;
+    transition: 1s ease-in-out
+}
+.div-show-inverse {
+    transform: translate(0,80px);
+    opacity: 0;
+    transition: 1s ease-in-out
 }
