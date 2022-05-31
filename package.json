@@ -1,6 +1,6 @@
 {
   "name": "modelo-1",
-  "version": "1.0b",
+  "version": "1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
