@@ -7,7 +7,7 @@
     -o-background-size: cover;
 }
 .main-bg-layer2 {
-    background: url("assets/img/bg_main_2.jpg") no-repeat center center fixed;
+    background: url("assets/img/bg_main_2.png") no-repeat center center fixed;
     background-color: #112029;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -99,6 +99,13 @@
     top: 68%;
     transform: translate(-50%, -50%);
 }
+.welcome-fixed-container2 {
+    position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
 .low-z-index{
     z-index: -50 !important;
 }
@@ -155,10 +162,10 @@ dd {
 .div-show-normal {
     transform: translate(0, 0px)!important;
     opacity: 1 !important;
-    transition: 1s ease-in-out
+    transition: .8s ease-in-out
 }
 .div-show-inverse {
     transform: translate(0,80px);
     opacity: 0;
-    transition: 1s ease-in-out
+    transition: .8s ease-in-out
 }

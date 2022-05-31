@@ -1,0 +1,4 @@
+//CONFIGURACOES DO LIVE SERVER PARA TESTE LOCAL
+{
+    "liveServer.settings.root": "/dist/modelo-1"
+}

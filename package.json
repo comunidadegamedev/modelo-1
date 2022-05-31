@@ -6,6 +6,9 @@
     "start": "ng serve",
     "start:dev": "ng serve --watch --port 3300",
     "build": "ng build",
+    "build:prod": "ng build --base-href /modelo-1/",
+    "build:local": "ng build --aot",
+    "build:localhref": "ng build --aot --base-href \"/Users/vitor/OneDrive/Documentos/VS%20Code%20Projects/projetos_oficiais/comunidade-gamer/modelo-1/dist/modelo-1/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
